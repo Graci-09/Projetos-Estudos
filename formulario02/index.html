@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário 02</title>
+</head>
+<body>
+    <form action="">
+        <main>
+        <div class="header">
+            <h1>Sistema de Gestão Acadêmica</h1>
+            <h2>Manutenção de usuários do sistema interno</h2>
+        </div>
+            <div class="controle">
+                <label class="control-left">Login</label>
+                    <input type="text" class="texto margin-control">
+            </div>
+            <div class="controle">
+                <label class="control-left">Senha</label>
+                    <input type="password" class="texto margin-control">
+            </div>
+            <div class="controle">
+                <label class="control-left">Status</label>
+                <select name="status" id="status">
+                    <div class="col-6">
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </div>
+                </select>
+            </div>
+            <div class="controle">
+                <label class="control-left">Tipo</label>
+                    <div class="col-6">
+                        <label for="type">
+                            <input type="radio" name="tipo">Técnico
+                        </label>
+                        <label for="type">
+                            <input type="radio" name="tipo">Professor
+                        </label>
+                        <label for="type">
+                            <input type="radio" name="tipo">Aluno
+                        </label>
+                    </div>
+            </div>
+            <div class="controle">
+                <label for="date" class="control-left">Data de Criação</label>
+                <input type="date" class="col-6">
+            </div>
+            <div class="controle">
+                <label class="control-left">Perfil</label>
+                <div class="col-6">
+                    <label for="perfil">
+                        <input type="radio" name="perfil">Convidado
+                    </label>
+                    <label for="perfil">
+                        <input type="radio" name="perfil">Administrador
+                    </label>
+                </div>
+            </div>
+            <div class="controle">
+                <label class="control-left">Observação</label>
+                    <textarea name="obs" id="obs" cols="45" rows="10" class="col-6"></textarea>
+            </div>
+            <div class="controle">
+                <label class="control-left">Módulo</label>
+                <div class="col-6">
+                    <label for="mod">
+                        <input type="checkbox" class="mod-control">Compras
+                    </label>
+                    <label for="mod">
+                        <input type="checkbox" class="mod-control">Biblioteca
+                    </label>
+                    <label for="mod">
+                        <input type="checkbox" class="mod-control">Acadêmico
+                    </label>
+                    <label for="mod">
+                        <input type="checkbox" class="mod-control">Documentação
+                    </label>
+                    <label for="mod">
+                        <input type="checkbox" class="mod-control">Recursos Humanos
+                    </label>
+                </div>
+                <p>
+                    <input type="button" value="Enviar" class="submit">
+                    <input type="reset" value="Limpar" class="submit">
+                </p>
+        </main>
+    </form>
+    </div>
+</body>
+</html>
